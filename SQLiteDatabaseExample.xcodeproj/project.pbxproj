@@ -13,6 +13,9 @@
 		C32A2EC21FC522C600FFEC49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32A2EC11FC522C600FFEC49 /* Assets.xcassets */; };
 		C32A2EC51FC522C600FFEC49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32A2EC31FC522C600FFEC49 /* LaunchScreen.storyboard */; };
 		C32A2EC81FC522C600FFEC49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A2EC71FC522C600FFEC49 /* main.m */; };
+		C32A2ECF1FC5294700FFEC49 /* MyStudents.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = C32A2ECE1FC5294700FFEC49 /* MyStudents.sqlite */; };
+		C32A2ED31FC52AB200FFEC49 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C32A2ED11FC52AA100FFEC49 /* libsqlite3.tbd */; };
+		C32A2ED61FC5364F00FFEC49 /* StudentInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C32A2ED51FC5364F00FFEC49 /* StudentInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,11 @@
 		C32A2EC41FC522C600FFEC49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32A2EC61FC522C600FFEC49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32A2EC71FC522C600FFEC49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C32A2ECE1FC5294700FFEC49 /* MyStudents.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyStudents.sqlite; sourceTree = "<group>"; };
+		C32A2ED11FC52AA100FFEC49 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C32A2ED21FC52AA100FFEC49 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C32A2ED41FC5364F00FFEC49 /* StudentInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentInfo.h; sourceTree = "<group>"; };
+		C32A2ED51FC5364F00FFEC49 /* StudentInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StudentInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32A2ED31FC52AB200FFEC49 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,7 @@
 			children = (
 				C32A2EB71FC522C600FFEC49 /* SQLiteDatabaseExample */,
 				C32A2EB61FC522C600FFEC49 /* Products */,
+				C32A2ED01FC52AA100FFEC49 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +68,7 @@
 		C32A2EB71FC522C600FFEC49 /* SQLiteDatabaseExample */ = {
 			isa = PBXGroup;
 			children = (
+				C32A2ECE1FC5294700FFEC49 /* MyStudents.sqlite */,
 				C32A2EB81FC522C600FFEC49 /* AppDelegate.h */,
 				C32A2EB91FC522C600FFEC49 /* AppDelegate.m */,
 				C32A2EBB1FC522C600FFEC49 /* ViewController.h */,
@@ -67,8 +78,19 @@
 				C32A2EC31FC522C600FFEC49 /* LaunchScreen.storyboard */,
 				C32A2EC61FC522C600FFEC49 /* Info.plist */,
 				C32A2EC71FC522C600FFEC49 /* main.m */,
+				C32A2ED41FC5364F00FFEC49 /* StudentInfo.h */,
+				C32A2ED51FC5364F00FFEC49 /* StudentInfo.m */,
 			);
 			path = SQLiteDatabaseExample;
+			sourceTree = "<group>";
+		};
+		C32A2ED01FC52AA100FFEC49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C32A2ED21FC52AA100FFEC49 /* libsqlite3.0.tbd */,
+				C32A2ED11FC52AA100FFEC49 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C32A2EC51FC522C600FFEC49 /* LaunchScreen.storyboard in Resources */,
+				C32A2ECF1FC5294700FFEC49 /* MyStudents.sqlite in Resources */,
 				C32A2EC21FC522C600FFEC49 /* Assets.xcassets in Resources */,
 				C32A2EC01FC522C600FFEC49 /* Main.storyboard in Resources */,
 			);
@@ -145,6 +168,7 @@
 				C32A2EBD1FC522C600FFEC49 /* ViewController.m in Sources */,
 				C32A2EC81FC522C600FFEC49 /* main.m in Sources */,
 				C32A2EBA1FC522C600FFEC49 /* AppDelegate.m in Sources */,
+				C32A2ED61FC5364F00FFEC49 /* StudentInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
